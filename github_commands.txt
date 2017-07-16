@@ -1,9 +1,13 @@
+/* Clone Repository */
 git clone --recursive ssh://git@stash:7999/ein-prod/ein.git
 
+/* Check Branch */
 git branch - to verify the branch currently set to
 
+// Change/Switch Branch
 git checkout /prototype/gpio-diagnostics --> switches branch
 
+// Create a new Repository
 …or create a new repository on the command line
 
 echo "# github-demo" >> README.md
@@ -11,7 +15,7 @@ git init
 git add README.md  --> puts in staging area
 git commit -m "first commit" --> puts in local repo
 git remote add origin https://github.com/hzhou849/github-demo.git (adds remote access to online repo)
-git push -u origin master -- pushes commit to online repo
+git push -u origin master --> pushes commit to online repo
 …or push an existing repository from the command line
 
 git remote add origin https://github.com/hzhou849/github-demo.git
@@ -20,6 +24,8 @@ git push -u origin master
 https://github.com/hzhou849/github-demo.git
 
 Run
+
+// Adding login information to local repository
 *exclude "--global" so the account scope is only for the active folder
   git config --global user.email "you@example.com"
     git config --global user.name "Your Name"
